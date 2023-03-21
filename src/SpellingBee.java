@@ -127,7 +127,7 @@ public class SpellingBee {
     public void checkWords() {
         boolean inDictionary;
         for(int i = 0; i<words.size(); i++){
-            inDictionary = binarySearch(DICTIONARY, words.get(i), 0, words.size() - 1);
+            inDictionary = binarySearch(DICTIONARY, words.get(i), 0, DICTIONARY.length - 1);
             if(!inDictionary) {
                 words.remove(i);
                 i--;
